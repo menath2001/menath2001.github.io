@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Car Rent4U | Submit Inquiry</title>
+
+		<meta charset="UTF-8">
+   		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+   		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="stylesheet" href="subInq_style.css" type="text/css">
+
+		<!-- font awesome cdn link to webpage -->
+		<script src="https://kit.fontawesome.com/ca1bc63871.js" crossorigin="anonymous"></script>
+
+		<!-- Google fonts linked to wepage -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Playball&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+		<nav>
+			<div class="logo" onclick="location.href='index.html'" >Car Rent4U</div>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="fleet.html">Fleet</a></li>
+					<li><a href="rates.html">Rates</a></li>
+					<li><a href="aboutUs.html">About Us</a></li>
+					<li><a href="contactUs.html">Contact Us</a></li>
+					<li><a href="more.html">More</a></li>
+					<li><a class="selected" href="subInq.html">Submit Inquiry</a></li>
+				</ul>
+		</nav>
+
+		<div class="container">
+			<header>Book Your Ride Today!</header>
+			<form action="#">
+				<div class="formFirst">
+					<div class="personal">
+						<span class="title">Personal Details</span>
+						<div class="fields">
+							<div class="inputField">
+								<label>Full Name</label>
+								<input type="text" id="fullName" name="fullName" placeholder="Enter Your Full Name" required="required">
+							</div>
+
+							<div class="inputField">
+								<label>NIC Number</label>
+								<input type="text" id="nic" name="nic" placeholder="Enter Your NIC Number">
+							</div>
+
+							<div class="inputField">
+								<label>Email</label>
+								<input type="email" id="email" name="email" placeholder="Enter Your Email Address" required="required">
+							</div>
+
+							<div class="inputField">
+								<label>Contact Number</label>
+								<input type="number" id="contactNum" name="contactNum" placeholder="Enter Your Contact Number" required="required">
+							</div> 
+
+							<div class="inputField">
+								<label>Gender</label>
+								<select type="text" id="gender" name="gender" required="required">
+									<option selected="#">Select Your Gender</option>
+									<option>Male</option>
+									<option>Female</option>
+									<option>Prefer Not to Say</option>
+								</select>
+							</div>
+							
+							<div class="inputField">
+								<label>Home Town</label>
+								<input type="text" id="home" name="home" placeholder="Enter Your Home Town" required="required">
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="formSecond">
+					<div class="booking">
+						<span class="title">Reservation Details</span>
+						<div class="fields">
+							<div class="inputField">
+								<label>Vehicle Type</label>
+								<select type="text" id="vehType" name="vehType" required="required">
+									<option selected="#">Select Vehicle Type</option>
+									<option>Luxury Cars [A01]</option>
+									<option>Premium Cars [B02]</option>
+									<option>General Cars [C03]</option>
+									<option>Buses, Vans & MPV [D04]</option>
+									<option>4WD & SUV [E05]</option>
+									<option>Classic & Vintage [F06] - Weddings & Events</option>
+								</select>
+							</div>
+
+							<div class="inputField">
+								<label>Vehicle Code</label>
+								<select type="text" id="vehCode" name="vehCode" required="required">
+									<option selected="#">Select Vehicle Code</option>
+									<option>A01 - LX01</option>
+									<option>A01 - LX02</option>
+									<option>A01 - LX03</option>
+									<option>A01 - LX04</option>
+									<option>A01 - LX05</option>
+									<option>A01 - LX06</option>
+									<option>A01 - LX07</option>
+									<option>A01 - LX08</option>
+									<option>B02 - PR01</option>
+									<option>B02 - PR02</option>
+									<option>B02 - PR03</option>
+									<option>B02 - PR04</option>
+									<option>C03 - GR01</option>
+									<option>C03 - GR02</option>
+									<option>C03 - GR03</option>
+									<option>C03 - GR04</option>
+									<option>D04 - BV01</option>
+									<option>D04 - BV02</option>
+									<option>D04 - BV03</option>
+									<option>D04 - BV04</option>
+									<option>E05 - WS01</option>
+									<option>E05 - WS02</option>
+									<option>E05 - WS03</option>
+									<option>E05 - WS04</option>
+									<option>CLASSIC & VINTAGE [Category F]</option>
+								</select>
+							</div>
+
+							<div class="inputField">
+								<label>Service Type</label>
+								<select type="text" id="ServiceType" name="ServiceType" required="required">
+									<option selected="Select Service Type">Select Service Type</option>
+									<option>Self Drive</option>
+									<option>Tours / Chauffeur Driven</option>
+									<option>Weddings & Events</option>
+									<option>Airport / City Transfers</option>
+								</select>
+							</div>
+
+							<div class="inputField">
+								<label>Passengers</label>
+								<input type="number" id="passengers" name="passengers" placeholder="Enter Number of Passengers" required="required">
+							</div>
+
+							<div class="inputField">
+								<label>Pickup Location</label>
+								<input type="text" id="pickLoc" name="pickLoc" placeholder="Enter Pickup Location" required="required">
+								<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63371.80392194407!2d79.81500584707466!3d6.921922084849656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae253d10f7a7003%3A0x320b2e4d32d3838d!2sColombo!5e0!3m2!1sen!2slk!4v1671945372926!5m2!1sen!2slk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+							</div>
+							
+							<div class="inputField">
+								<label>Dropoff Location</label>
+								<input type="text" id="droLoc" name="dropL" placeholder="Enter Dropoff Location" required="required">
+								<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31740.42120999337!2d80.19139745441613!3d6.055933837835294!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae173bb6932fce3%3A0x4a35b903f9c64c03!2sGalle!5e0!3m2!1sen!2slk!4v1671945203312!5m2!1sen!2slk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+							</div>
+
+							<div class="inputField">
+								<label>Pickup Date</label>
+								<input type="date" id="pickDate" name="pickDate" placeholder="Select Pickup Date" required="required">
+							</div>
+
+							<div class="inputField">
+								<label>Return Date</label>
+								<input type="date" id="rtDate" name="rtDate" placeholder="Select Return Date" required="required">
+							</div>
+
+							<div class="inputField">
+								<label>Pickup Time</label>
+								<input type="time" id="pickTime" name="pickTime" placeholder="Enter Pickup Time" required="required">
+							</div>
+
+							<div class="inputField">
+								<label>Dropoff Time</label>
+								<input type="time" id="dropTime" name="dropTime" placeholder="Enter Dropoff Time" required="required">
+							</div>
+
+							<div class="inputField">
+								<label>Additional Loadout</label>
+								<select type="text" id="addLd" name="addLd" required="required">
+									<option selected="#">Additional Loadout Request</option>
+									<option>Yes</option>
+									<option>No</option>
+								</select>
+							</div>
+
+							<div class="inputField">
+								<label>Message</label>
+								<input type="text" id="message" name="message" placeholder="Enter Any Other Informations" required="required">
+							</div>
+						</div>
+						<div class="buttons">
+							<button type="reset" class="resetBtn">
+								<span class="btnName">Reset</span>
+								<i class="fa-solid fa-arrows-rotate"></i>
+							</button>
+				
+							<button type="submit" class="subBtn" onclick="openPopup()">
+								<span class="btnName">Submit</span>
+								<i class="fa-regular fa-circle-check"></i>
+							</button>
+						</div>				
+					</div>
+				</div>
+			</form>
+		</div>
+
+		<div class="popup" id="popup">
+			<img src="Images\tick.png">
+			<h2>Thank You!</h2>
+			<p>Your information has been submitted successfully. <br> For more information, one of our representatives will get in touch with you.</p>
+			<button type="okBtn" onclick="closePopup()">OK</button>
+		</div>
+
+		<script type="text/javascript">
+			let popup = document.getElementById("popup");
+
+			function openPopup(){
+				popup.classList.add("open-popup");
+			}
+			function closePopup(){
+				popup.classList.remove("open-popup");
+			}
+		</script>
+
+		<footer>
+			<div class="footer_content">
+				<h3><a href="aboutUs.html">CAR RENT4U</a></h3>
+				<p>Pioneering network optimization that improves speed, reduces latency and congestion – along with full visibility.</p>
+				<ul class="social_links">
+					<li><a href="https://www.facebook.com"><i class="fa fa-facebook"></i></a></li>
+					<li><a href="https://www.instagram.com"><i class="fa fa-instagram"></i></a></li>
+					<li><a href="https://www.youtube.com/"><i class="fa fa-youtube"></i></a></li>
+					<li><a href="+94 11 4582999"><i class="fa-brands fa-whatsapp"></i></a></li>
+					<li><a href="https://twitter.com/"><i class="fa fa-twitter"></i></a></li>
+					<li><a href="https://www.linkedin.com/"><i class="fa fa-linkedin-square"></i></a></li>
+				</ul>
+			</div>
+
+			<div class="footer_bar">
+				<p>All copyrights reserved by CAR RENT4U &copy;2022 | Designed & Developed by <span>LEOCHEMEZZ</span></p>
+			</div>
+		</footer>
+    </body>
+</html>
